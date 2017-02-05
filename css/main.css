@@ -189,8 +189,8 @@ li a:hover {
 
 li a.sprite-dribbble {
 	background: url('../images/social_sprite.png') no-repeat -650px -204px;
-	width: 56px;
-	height: 56px;
+	width: 28px;
+	height: 28px;
 }
 
 li a.sprite-flickr {
@@ -232,29 +232,29 @@ li a.sprite-twitter {
 		font-size: 1.4em;
 		line-height:140%;
 	}
-	
+
 }
-	
+
 @media all and (max-width: 899px) and (min-width: 481px) {
 
 	body {
 		font-size: 1.2em;
 		line-height:140%;
 	}
-	
+
 }
 
 /* iphone */
 
 
 @media all and (min-width: 320px) and (max-width: 480px) {
-	
+
 	body {
 		font-size: 1.2em;
 		line-height:130%;
 	}
-	
-	
+
+
 	div#wrapper {
 		text-align: left;
 		margin: 5px auto;
@@ -266,7 +266,7 @@ li a.sprite-twitter {
 		-webkit-box-shadow: 1px 1px 2px 0px rgba(0, 0, 0, .3);
 */
 	}
-	
+
 	a.chat {
 		color: #fff;
 		background-color: #f86f6f;
@@ -274,7 +274,5 @@ li a.sprite-twitter {
 		color: rgba(255,255,255, 1);
 		-webkit-transition: background-color .3s linear;
 	}
-	
+
 }
-
-
