@@ -1,0 +1,187 @@
+/*
+A little CSS for example site
+Author Jackson Latka
+Date 2/22/14
+Version 0.1
+*/
+
+/* ----- typography ----- */
+
+h1 {
+  font-family: "freight-sans-pro-1","freight-sans-pro-2", "Lucida Grande", sans-serif;
+  font-size: 4em;
+  line-height: 1.1;
+  font-weight: bold;
+}
+
+h2 {
+  font-family: "freight-sans-pro-1","freight-sans-pro-2", "Lucida Grande", sans-serif;
+  font-size: 2.2em;
+  line-height: 1.1;
+  padding-bottom: 25px;
+  font-weight: bold;
+  word-wrap: break-word;
+}
+
+p {
+   font-family: "freight-text-pro-1","freight-text-pro-2", "Times New Roman", serif;
+   font-size: 1.4em;
+   line-height: 1.4;
+   margin-bottom: 32px;
+}
+
+a {
+    -o-transition:.5s;
+    -ms-transition:.5s;
+    -moz-transition:.5s;
+    -webkit-transition:.5s;
+    transition:.5s;
+	color: #a7a7a7;
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: underline;
+	color: #333;
+}
+
+
+/* ----- header ----- */
+
+header {
+	height: 400px;
+	background-color:#d1426b;
+	padding: 20px;
+}
+
+h1.hero-title {
+	text-align: center;
+	padding-top: 140px;
+	color: white;
+	text-shadow: 0px 1px 5px rgba(0,0,0,0.1);
+}
+
+p.hero-tagline {
+	font-family: "freight-sans-pro-1","freight-sans-pro-2", "Lucida Grande", sans-serif;
+	text-align: center;
+	font-size: 1em;
+	margin-top: 10px;
+	color: white;
+	text-shadow: 0px 1px 5px rgba(0,0,0,0.1);
+	letter-spacing: 1px;
+	font-weight: 200;
+	text-transform: uppercase;
+}
+
+
+/* ----- page ----- */
+
+section.container {
+	margin: 0 auto;
+	padding: 80px 20px;
+	max-width: 700px;
+}
+
+aside {
+    border-top: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+    color: #a5a4a4;
+	font-size: 1.3em;
+    font-style: italic;
+    margin: 30px;
+    padding: 30px 30px 5px 30px;    
+    text-align: center; 
+} 
+
+div.contact {
+	margin: 80px auto 10px auto;
+	text-align: center;
+}
+
+.btn {
+  -webkit-border-radius: 4;
+  -moz-border-radius: 4;
+  border-radius: 4px;
+  color: #fff;
+  background: #000;
+  width: 200px;
+  font-family: "freight-sans-pro-1","freight-sans-pro-2", "Lucida Grande", sans-serif;
+  font-size: 1em;
+  text-transform: uppercase;
+  text-align: center;
+  padding: 20px 50px;
+  text-decoration: none;
+  transition: all 0.2s ease-out;
+}
+
+.btn:hover {
+  color: #fff;
+  background: #333;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* ----- footer ----- */
+
+footer {
+	margin: 0 auto;
+	text-align: center;
+	padding: 15px 20px 40px 20px;
+	max-width: 700px;
+	border-top: 1px solid #efefef;
+}
+
+footer li {
+	font-family: "freight-sans-pro-1","freight-sans-pro-2", "Lucida Grande", sans-serif;
+	font-size: 0.9em;
+	color: #ccc;
+	text-align: left;
+	display: inline;
+	list-style-type: none;
+	padding-right: 20px;
+}
+
+footer p {
+	font-family: "freight-sans-pro-1","freight-sans-pro-2", "Lucida Grande", sans-serif;
+	font-size: 0.9em;
+	color: #ccc;
+	text-align: left;
+	text-align: center;
+	padding-top: 15px;
+}
+
+
+/* ----- mobile ----- */
+
+
+@media all and (max-width: 1024px) {
+	
+	header {
+		background-color:#5042d1;
+	}
+}
+	
+
+@media all and (max-width: 640px) {
+	
+	header {
+		height: 200px;
+		background-color:#42d19d;
+	}
+
+	h1.hero-title {
+		font-size: 2em;
+		padding-top: 60px;
+	}
+
+	p.hero-tagline {
+		font-size: 0.8em;
+	}
+	
+	section.container {
+		padding: 60px 20px;
+	}
+	
+	aside {
+		font-size: 1em;
+}

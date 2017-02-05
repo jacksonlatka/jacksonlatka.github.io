@@ -1,0 +1,280 @@
+/*-----------------------------------------------------------------------------
+Style Sheet (empty commented stylesheet)
+
+version:   2
+author:    j.latka
+website:   http://www.jacksonlatka.com/
+-----------------------------------------------------------------------------*/
+
+/* =General
+-----------------------------------------------------------------------------*/
+
+/* Resets all CSS styles for browser compatibility. Thanks YUI. */
+@import "reset-fonts-grids.css";
+
+/* Adds back many 'normal' CSS styles, after reset. Thanks YUI. */
+@import "base-min.css";
+
+/* Class for clearing floats */
+.clear {
+	clear:both;
+}
+
+html {
+	min-width:;
+	/*----Code below (2 lines) forces vertical scrollbar to avoid page shift------*/
+	min-height:100%;
+	margin-bottom:1px;
+}
+
+
+body {
+	color:#000;
+/*	font-family: "adelle-1","adelle-2",serif;*/
+    font-family: "freight-text-pro-1","freight-text-pro-2", "Times New Roman", serif;
+	font-size: 1.5em;
+	line-height:140%;
+}
+
+
+div#wrapper {
+	text-align: left;
+	margin: 75px auto;
+	width: 80%;
+	max-width: 720px;
+	/* background-color: #f8f8f8; */
+	padding: 20px 40px;
+	border-radius: 6px;
+	text-align: justify;
+}
+
+
+div#fade {
+	display:inline;
+	}
+
+
+
+/* =Headings
+-----------------------------------------------------------------------------*/
+
+h1 {
+	color: #f86f6f;
+	font-size: 3em;
+	line-height: 0.9em;
+	font-family: "ff-meta-serif-web-pro-1","ff-meta-serif-web-pro-2";
+	margin-bottom: 50px;
+}
+
+
+h2 {
+	color: #999;
+	font-size: .6em;
+	padding-bottom: 8px;
+	line-height: 1em;
+	font-family: "ff-meta-web-pro-1","ff-meta-web-pro-2";
+	margin: 50px 0 15px 0;
+	border-bottom: solid 1px #efefef;
+}
+
+h2 span{
+	text-transform: uppercase;
+	font-size: .45em;
+	padding-left: 10px;
+	font-weight: normal;
+}
+
+/* =Links
+-----------------------------------------------------------------------------*/
+
+a:link, a:visited {
+	color: #f86f6f;
+	text-decoration:underline;
+	border: none;
+}
+
+a:hover {
+	color: #FFF;
+	background-color: #f86f6f;
+	text-decoration: none;
+	-moz-border-radius: 2px;
+	-webkit-border-radius: 2px;
+	border-radius: 2px;
+}
+
+
+/* removes dotted link borders*/
+a:active {
+outline: none;
+}
+
+a:focus {
+-moz-outline-style: none;
+}
+/* end removes dotted link borders*/
+
+
+a#triggerBtn {
+	text-decoration: none;
+	padding: 2px 5px;
+	color: #f86f6f;
+}
+
+a:hover#triggerBtn {
+	text-decoration: none;
+	padding: 2px 5px;
+	color: #fff;
+}
+
+
+/* =Misc 1
+-----------------------------------------------------------------------------*/
+
+a.chat {
+	font-family: ff-meta-web-pro-1,ff-meta-web-pro-2;
+	background-color: #fff;
+	color: #f86f6f;
+	font-size: .9em;
+	padding: 8px 10px;
+	-moz-border-radius: 4px;
+	-webkit-border-radius: 4px;
+	border-radius: 4px;
+	border: solid 1px rgba(248, 111, 111,0.3);
+	margin: 40px auto 0px auto;
+	display: block;
+	text-align: center;
+	text-decoration: none;
+}
+
+
+a.chat:hover {
+	color: #fff;
+	background-color: #f86f6f;
+	border: solid 1px #d05d5d;
+	color: rgba(255,255,255, 1);
+	-webkit-transition: background-color .3s linear;
+}
+
+
+
+/* sprites */
+
+ul#social {
+	margin-left: -30px;
+	float: left;
+}
+
+@media only screen and (max-width: 590px) {
+	ul#social {
+	width: 260px;
+	}
+}
+
+ul#social li {
+	list-style: none;
+	float: left;
+	margin-right: 20px;
+	margin-bottom: 20px;
+}
+
+li a {
+	text-indent: -9999px;
+	display: block;
+	opacity: 0.25;
+}
+
+li a:hover {
+	opacity: 0.8;
+}
+
+li a.sprite-dribbble {
+	background: url('../images/social_sprite.png') no-repeat -650px -204px;
+	width: 56px;
+	height: 56px;
+}
+
+li a.sprite-flickr {
+	background: url('../images/social_sprite.png') no-repeat -579px -276px;
+	width: 54px;
+	height: 54px;
+}
+
+li a.sprite-linkedin {
+	background: url('../images/social_sprite.png') no-repeat -506px -419px;
+	width: 54px;
+	height: 55px;
+}
+
+li a.sprite-rdio {
+	background: url('../images/social_sprite.png') no-repeat -290px -564px;
+	width: 55px;
+	height: 54px;
+}
+
+li a.sprite-tumblr {
+	background: url('../images/social_sprite.png') no-repeat -650px -637px;
+	width: 55px;
+	height: 54px;
+}
+
+li a.sprite-twitter {
+	background: url('../images/social_sprite.png') no-repeat -722px -636px;
+	width: 55px;
+	height: 54px;
+}
+
+
+/* smaller screens */
+
+@media all and (max-width: 1200px) and (min-width: 900px) {
+
+	body {
+		font-size: 1.4em;
+		line-height:140%;
+	}
+	
+}
+	
+@media all and (max-width: 899px) and (min-width: 481px) {
+
+	body {
+		font-size: 1.2em;
+		line-height:140%;
+	}
+	
+}
+
+/* iphone */
+
+
+@media all and (min-width: 320px) and (max-width: 480px) {
+	
+	body {
+		font-size: 1.2em;
+		line-height:130%;
+	}
+	
+	
+	div#wrapper {
+		text-align: left;
+		margin: 5px auto;
+		width: 90%;
+		padding: 15px 15px;
+/*
+		background-color: #efefef;
+		border-radius: 6px;
+		-webkit-box-shadow: 1px 1px 2px 0px rgba(0, 0, 0, .3);
+*/
+	}
+	
+	a.chat {
+		color: #fff;
+		background-color: #f86f6f;
+		border: solid 1px #d05d5d;
+		color: rgba(255,255,255, 1);
+		-webkit-transition: background-color .3s linear;
+	}
+	
+}
+
+
